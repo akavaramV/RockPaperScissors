@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!--Vaishnav Akavaram; 991578795; Professor Andy Pak; Assignment 1: Rock_Paper_Scissors; HTML file-->
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/rps.css">
+  <title>Rock&#9994, Paper&#9995, Scissors&#9996!</title>
+</head>
+<body>
+  <h1>Rock&#9994, Paper&#9995, Scissors&#9996!</h1>
+  <h3>First one to 10 points wins the game&#128526</h3>
+  <hr>
+
+<!--Display score board-->
+  <h4 id="You"><span>&#129491</span>Your Score:</h4><p id="uScore">0</p>
+  <h4 id="Comp"><span>&#129302</span>Computer Score: </h4><p id="cScore">0</p><br>
+  
+<!--Display the final message when the user or computer wins or when the user clicks Quit button-->
+  <h2 id="finalMssg">Click on Rock, Paper, or Scissors button to start. <br>Good Luck!&#128077</h2>
+  <hr>
+
+<!--The following div contains all the buttons the user interacts with-->
+  <div id = "main">
+
+  <div id= "rock_div">
+  <button id='rock_button' type= button name="rock" onclick="rockPower(), clickSound()" onmouseover="notes_rock()" onmouseout="notes_empty()"><img src = "images/icons8-rock-48.png" alt="rock_icon"></button><p class="hint">Rock</p>
+  </div>
+
+  <div id="paper_div">
+  <button id='paper_button' type= button name="paper" onclick="paperPower(), clickSound()" onmouseover= "notes_paper()" onmouseout="notes_empty()"><img src = "images/icons8-paper-48.png" alt="paper_icon"></button><p class="hint">Paper</p>
+  </div>
+
+  <div id="scissors_div">
+  <button id='scissors_button' type= button name="scissors" onclick = "scissorsPower(), clickSound()" onmouseover = "notes_scissors()" onmouseout="notes_empty()"><img src = "images/icons8-cutting-48.png" alt="scissors_icon"></button><p class="hint">Scissors</p>
+  </div>
+
+  <div id="quit_div">
+    <button id='quit_button' type= button name="quit" onclick = "quitGame(), clickSound()" onmouseover="notes_quit()" onmouseout="notes_empty()"><img src = "images/icons8-close-window-48.png" alt="quit_icon"></button><p class="hint">Quit</p>
+  </div>
+  
+  <div id="restart_div">
+    <button id='restart_button' type= button name="restart" onclick = "restartGame()" onmouseover="notes_restart()" onmouseout="notes_empty()"><img src = "images/icons8-restart-48.png" alt="quit_icon"></button><p class="hint">Restart</p>
+  </div>
+
+  </div>
+<p id='notes'></p>
+<!--Audio clip for button sound effects-->
+  <audio id="buttonClickSound">
+    <source src='audio/Tick.mp3'> 
+  </audio>
+
+<!--Display the resulting message below the div container after the user interacts with the buttons-->
+  <h2 id="fightMssg"></h2>
+
+  <script src="javascript/rps.js"></script>
+</body>
+</html>
+
+
+<!--Images/Icons obtained from https://icons8.com/icons/set/rock-paper-scissor-->
+<!--Emojis were obtained using hexadecimal or decimal code reference from w3schools.com-->

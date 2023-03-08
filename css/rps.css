@@ -1,0 +1,14 @@
+   /*Vaishnav Akavaram; 991578795; Professor Andy Pak; Assignment 1: Rock_Paper_Scissors; CSS file*/
+   
+   h1,h3{text-align: center;}
+   body{background-color:black; color: white;}
+   button{width: 100px; height: 50px; color: rgb(180, 162, 81); background-color: black;} 
+   #main{display: flex; justify-content: flex-start;}
+   .hint{text-align: center;}
+   #You, #uScore{text-align: center; color: cyan; font-size: larger;}
+   #Comp, #cScore{text-align: center; color: red; font-size: larger;}
+   #finalMssg{text-align: center; color: silver;}
+   #fightMssg{text-align: center; color: yellow;}
+   #uScore, #cScore{font-size: x-large;}
+
+
